@@ -6,6 +6,7 @@ import java.util.List;
 public class Construtora {
 
     public static void construtora(){
+        List<Livro> livros = new ArrayList<>();
         List<String> autor1 = new ArrayList<>();
         autor1.add("Barbara Liskov");
         Livro livro1 = new Livro("Program development in Java", autor1);
@@ -14,7 +15,11 @@ public class Construtora {
         autor2.add("Elisabeth Freeman");
         autor2.add("Kathy Sierra");
         Livro livro2 = new Livro("Use a Cabeça: Padrões de projeto", autor2);
-        Apresentar.imprimir(livro1,livro2);
+
+        livros.add(livro1);
+        livros.add(livro2);
+
+        Apresentar.imprimir(livros);
 
         }
 

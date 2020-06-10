@@ -1,18 +1,25 @@
 package com.aceleradora.biblioteca;
 
+import java.util.List;
+
 public class Apresentar {
-    public static void imprimir(Livro livro1, Livro livro2){
-        System.out.println();
-        System.out.println("Bem vinda(o) à biblioteca, onde você encontra os melhores livros de Porto Alegre");
+    /*
+    * Imprime na tela o resultado da lista
+    * */
+    public static void imprimir(List livros){
+        System.out.println("___________________________________________________________________________________");
+        System.out.println(" Bem vinda(o) à biblioteca, onde você encontra os melhores livros de Porto Alegre  ");
+        System.out.println("___________________________________________________________________________________");
         System.out.println();
         System.out.println("Nossos livros disponíveis para alugar são: ");
         System.out.println();
-        System.out.println("Livro 1");
-        System.out.println("Título : " + livro1.getTitulo());
-        System.out.println("Autoria: " + livro1.getAutores());
-        System.out.println();
-        System.out.println("Livro 2");
-        System.out.println("Título : " + livro2.getTitulo());
-        System.out.println("Autoria: " + livro2.getAutores());
+        for (int i =0; i < livros.size(); i++) {
+            Livro livro=(Livro)livros.get(i);
+            System.out.println("Livro "+(i+1));
+            System.out.println("Título : " +livro.getTitulo());
+            System.out.println("Autoria: "+livro.getAutores());
+            System.out.println();
+        }
+
     }
 }
