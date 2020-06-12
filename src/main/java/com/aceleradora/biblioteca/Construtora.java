@@ -6,6 +6,10 @@ import java.util.List;
 public class Construtora {
 
     public static void construtora(){
+        /*
+        * Instancia os objetos e adiciona na  lista
+        *
+        * */
         List<Livro> livros = new ArrayList<>();
         List<String> autor1 = new ArrayList<>();
         autor1.add("Barbara Liskov");
