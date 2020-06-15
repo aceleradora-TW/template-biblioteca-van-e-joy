@@ -1,7 +1,7 @@
 package com.aceleradora.biblioteca;
 
 import java.util.List;
-import java.util.stream.Stream;
+
 
 public class Apresentar {
     /*
@@ -14,9 +14,9 @@ public class Apresentar {
         System.out.println();
         System.out.println("Nossos livros disponíveis para alugar são: ");
         System.out.println();
-        livros.stream().forEach(livro->{
+        livros.forEach(livro->{
             System.out.println("Título : " +livro.getTitulo());
-            System.out.println("Autoria: " +livro.getAutores());
+            System.out.println("Autoria: " + livro.getAutores().nome);
             System.out.println();
         });
     }

@@ -1,12 +1,11 @@
 package com.aceleradora.biblioteca;
 
-import java.util.List;
 
 public class Livro {
     private String titulo;
-    private List<String> autores;
+    private Autor autores;
 
-    public Livro(String titulo, List<String> autores) {
+    public Livro(String titulo, Autor autores) {
         this.titulo = titulo;
         this.autores = autores;
     }
@@ -22,11 +21,11 @@ public class Livro {
         this.titulo = titulo;
     }
 
-    public List<String> getAutores() {
+    public Autor getAutores() {
         return autores;
     }
 
-    public void setAutores(List<String> autores) {
+    public void setAutores(Autor autores) {
         this.autores = autores;
     }
 

@@ -11,13 +11,9 @@ public class Construtora {
         *
         * */
         List<Livro> livros = new ArrayList<>();
-        List<String> autor1 = new ArrayList<>();
-        autor1.add("Barbara Liskov");
+        Autor autor1 =new Autor("Barbara Liskov");
+        Autor autor2 =new Autor("Elisabeth Freeman , Kathy Sierra");
         Livro livro1 = new Livro("Program development in Java", autor1);
-
-        List<String> autor2 = new ArrayList<>();
-        autor2.add("Elisabeth Freeman");
-        autor2.add("Kathy Sierra");
         Livro livro2 = new Livro("Use a Cabeça: Padrões de projeto", autor2);
 
         livros.add(livro1);
